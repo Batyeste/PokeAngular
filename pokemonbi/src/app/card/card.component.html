@@ -1,13 +1,7 @@
-<body>
-  <div class="container">
-    <div class="card">
-        <h2>Nom</h2>
-        <p>Poids: </p>
-        <p>Type: </p>
-
-        <!-- <h2>{{ name }}</h2>
-        <p>Poids: {{ weight }}</p>
-        <p>Type: {{ type }}</p> -->
+<div class="container" *ngIf="allList$ | async as list">
+    <div class="card" *ngFor="let item of list?.results; let i = index; trackBy: trackByFn">
+      <h2>{{ item.name }}</h2>
+      <a [href]="item.url">{{ item.url }}</a>
     </div>
   </div>
-</body>
+  

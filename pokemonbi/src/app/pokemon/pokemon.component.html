@@ -1,6 +1,13 @@
 <div>
     @for (poke of pokemon | async; track poke.name + $index){
-        <p>{{poke.name}}</p>
+        <p></p>
+        <div class="container">
+            <div class="card">
+                <h2>{{poke.name}}</h2>
+                <p>{{ poke.weight }} </p>
+                <p>{{ poke.type }} </p>
+            </div>
+          </div>
       }
       @empty {
         <p>Aucun pokemon trouvée</p>
