@@ -1,21 +1,44 @@
 .header {
     background-color: #382e49;
-    padding-top: 1px;
+    padding: 20px;
     text-align: center;
-
+    position: relative;
+    overflow: hidden;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #382e49;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  
     h1 {
-        font-size:50px;
-        color:#f6bf0c;
-        -webkit-text-stroke: 1px #395d91;
+      font-size: 50px;
+      color: #f6bf0c;
+      -webkit-text-stroke: 1px #395d91;
+      margin: 0;
     }
-
+  
     nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-
-        a {
-            margin-right: 25px;
-        }
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  
+      a {
+        color: #f6bf0c;
+        text-decoration: none;
+        margin-right: 25px;
+        font-size: 18px;
+      }
+  
+      a.active {
+        font-weight: bold;
+      }
     }
-}
+  }
+  
