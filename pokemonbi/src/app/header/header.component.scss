@@ -1,0 +1,21 @@
+.header {
+    background-color: #382e49;
+    padding-top: 1px;
+    text-align: center;
+
+    h1 {
+        font-size:50px;
+        color:#f6bf0c;
+        -webkit-text-stroke: 1px #395d91;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        a {
+            margin-right: 25px;
+        }
+    }
+}

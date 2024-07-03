@@ -1,0 +1,27 @@
+.footer {
+    background-color: #382e49;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color:#f6bf0c;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+
+        a {
+            color:#f6bf0c;
+            margin-right: 25px;
+        }
+    }
+}

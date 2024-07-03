@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(64, 143, 163);
+    // display: flex;
+    // justify-content: center; /* Centre horizontalement */
+    // align-items: center; /* Centre verticalement */
+    // height: 100vh; /* Prend toute la hauteur de la vue pour centrer verticalement */
+    margin: 0; /* Enlève les marges par défaut du body */
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Alignement en colonne */
+    align-items: flex-start; /* Alignement des éléments au début (à gauche) */
+    border: 2px solid black; /* Bordure noire pour le rectangle */
+    padding: 20px; /* Espace intérieur pour aérer le contenu */
+    background-color: white; /* Couleur de fond pour le rectangle */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espace entre le titre et le paragraphe */
+}
+
+.paragraph {
+    font-size: 16px;
+}
