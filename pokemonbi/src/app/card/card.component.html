@@ -1,7 +1,7 @@
 <div class="container" *ngIf="allList$ | async as list">
     <div class="card" *ngFor="let item of list?.results; let i = index; trackBy: trackByFn">
       <h2>{{ item.name }}</h2>
-      <a [href]="item.url">{{ item.url }}</a>
+      <a [routerLink]="'/single-pokemon/' + item.name" routerLinkActive="active">Plus d'info ici !</a>
     </div>
   </div>
   

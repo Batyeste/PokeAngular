@@ -1,0 +1,14 @@
+<div class="container" *ngIf="pokemon$ | async as pokemon">
+  <div class="card">
+    <h1>{{ pokemon.name }}</h1>
+    <p>Poids: {{ pokemon.weight }}</p>
+    <ul>
+      <li *ngFor="let typeObj of pokemon.types">
+        {{ typeObj.type.name }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div *ngIf="loading">Chargement en cours...</div>
+<div *ngIf="error">Erreur lors du chargement des détails du Pokémon.</div>
